@@ -1,37 +1,35 @@
 #include <fstream>
+#include <map>
+#include <functional>
 #include <cstdlib>
 using namespace std;
 
-#define RED_BTN "background:color:red;border:0px solid black;"
-
-#define SBUTTON "<button>"
-#define EBUTTON "</button>"
-
-class Style {
-public:
-  string value = "";
-  Style(){
-    
-  }
-  Style(string k){
-    
-  }
-  ~Style(){ value = ""; }
-};
-
 class Control {
-public:
-  string code;
-  Style style;
+
 };
 
-class Button : public Control {
+class Head {
+public:
+  map<string,string> info;
+};
+
+class Body {
+public:
   
-}
+};
+
+class Root {
+  Head* head;
+  Body* body;
+};
 
 class App {
- public:
-  void Add(Control k){
-    
-  }
+public:
+ string URL = "localhost:8080";
+ Root root(){
+
+ }
+ string Html(){
+
+ }
 };
